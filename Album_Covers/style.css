@@ -148,14 +148,16 @@ header img {
     align-items: center;
     text-align: center;
     font-size: 2em;
+    
 }
 
 .album-name img {
     display: block;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+    max-width: 700px;
+    /* width: 100%;
+    height: auto; */
     margin: 0 auto;
+    border-radius: 1em;
 }
 
 .album-name h2 {
