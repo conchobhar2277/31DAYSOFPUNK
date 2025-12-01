@@ -150,6 +150,14 @@ header img {
     font-size: 2em;
 }
 
+.album-name img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .album-name h2 {
     margin-bottom: 1em;
 }
