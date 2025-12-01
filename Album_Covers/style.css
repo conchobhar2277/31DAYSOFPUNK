@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root { /*what are we doing here*/
+    --base-color: #1e1e1e;
+    --highlight-color: #ff6f61;
+    --text-color: #ffffff;
+    --font-primary: 'Inter', sans-serif;
+    --color-1: #ff6f61;
+    --color-2: #6b5b95;
+    --color-3: #88b04b;
+
+    --line-height-base: 1.6;
+    --line-height-heading: 1.2;
+    
+}
+
+/* Universal selector * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    padding: 2rem;
+    background-color: var(--base-color);
+    line-height: var(--line-height-base);
+}
+
+p {
+    margin-bottom: .5rem;
+    line-height: inherit; /* inherits from body */
+}
+
+
+
+h1, h2, h3, h4, h5 {
+    line-height: var(--line-height-heading);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+nav {
+    margin: 1em 0 3em 0;
+    width: 100%;
+    padding: 0 1em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.favorite-C a, .favorite-B a {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+nav a:hover { /*for underline */
+    text-decoration: underline;
+}
+
+.favorite-B a:hover, .favorite-C a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+
+header, section { /*go over this. It is what starts the background box*/
+    /* margin-bottom: 0 auto 2em; */
+    max-width: 75em;
+    width: 100%;
+    margin: 0 auto 2em;
+    /* background-color: var(--color-2);*/ 
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    width: 100%;
+    max-width: 1100px;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.text-container {
+    margin: 0 auto;
+    text-align : center;
+    max-width: 700px;
+    width: 100%;
+    font-size: 1.75em;
+}
+
+.title {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2.25em;
+}
+
+.title h1{
+    color: var(--color-1);
+}
+
+.album-name {
+    margin-top: 0;
+    margin-bottom: .5em;
+    flex-direction: column;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.album-name h2 {
+    margin-bottom: 1em;
+}
+
+.blog-post-Ben{
+    font-size: 2.25em;
+    line-height: 1.5em;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-post-Connor{
+    font-size: 2.25em;
+    line-height: 1.5em;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.blog-post-Ben p {
+    font-size: .5em;
+}
+
+.blog-post-Connor p {
+    font-size: .5em;
+    margin-bottom: 1em;
+}
+
+.favorite-B {
+    flex-direction: column;
+    margin-right: 0em;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.favorite-C {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.favorite-B, .favorite-C {
+    flex: 0 0 45%;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+
+.Calender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.Calender a.calender-item-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Calender a.calender-item-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0em;
+    transform: 180ms ease, box-shadow 180ms ease;
+    transform-origin: center;
+}
+
+.Calender a.calendar-link:hover img,
+.Calender a.calendar-link:focus img {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.calender-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.calender-item {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calender-item p {
+    margin-top: .25em;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--highlight-color);
+    padding: .75em 1.5em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.secondary {
+    background-color: var(--color-2);
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1.125rem;
+    max-width: 40em;
+    margin: 1em auto 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.spotify-embed {
+    margin-top: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+.spotify-embed h3 {
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+.spotify-embed a.spotify-link {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.spotify-embed a.spotify-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+    transition: 180ms ease, box-shadow 180ms ease;
+    transform-origin: center;
+}
+
+.spotify-embed a.spotify-link:hover img,
+.spotify-embed a.spotify-link:focus img {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+
