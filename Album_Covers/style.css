@@ -8,6 +8,7 @@
     --color-1: #ff6f61;
     --color-2: #6b5b95;
     --color-3: #88b04b;
+    --color-4: #650c0c;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -28,6 +29,7 @@ body {
     background-color: var(--base-color);
     line-height: var(--line-height-base);
 }
+
 
 p {
     margin-bottom: .5rem;
@@ -67,7 +69,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--highlight-color);
+    color: var(--color-4);
 }
 
 nav a:hover { /*for underline */
@@ -77,7 +79,13 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--highlight-color);
+    color: var(--color-4);
+}
+
+body.day1 a.youtube-link, 
+body.day1 .favorite-B a,
+body.day1 .favorite-C a {
+    color: var(--color-1);
 }
 
 
@@ -135,8 +143,12 @@ header img {
     font-size: 2.25em;
 }
 
-.title h1{
+body.day1 .title h1 {
     color: var(--color-1);
+}
+
+.title h1{
+    color: var(--color-4);
 }
 
 .album-name {
@@ -157,11 +169,12 @@ header img {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    border-radius: 1em;
+    /* border-radius: 1em; */
 }
 
-.album-name h2 {
+.album-name p {
     margin-bottom: 1em;
+    font-size: .75em;
 }
 
 .blog-post-Ben{
@@ -272,7 +285,7 @@ header img {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-1);
+    background-color: var(--color-4);
     text-align: center;
 
 }
