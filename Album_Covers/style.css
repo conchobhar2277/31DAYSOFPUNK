@@ -9,6 +9,7 @@
     --color-2: #6b5b95;
     --color-3: #88b04b;
     --color-4: #650c0c;
+    --color-5: #7ee029;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -69,7 +70,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 nav a:hover { /*for underline */
@@ -79,13 +80,19 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 body.day1 a.youtube-link, 
 body.day1 .favorite-B a,
 body.day1 .favorite-C a {
     color: var(--color-1);
+}
+
+body.day2 a.youtube-link, 
+body.day2 .favorite-B a,
+body.day2 .favorite-C a {
+    color: var(--color-4);
 }
 
 
@@ -147,8 +154,12 @@ body.day1 .title h1 {
     color: var(--color-1);
 }
 
-.title h1{
+body.day2 .title h1 {
     color: var(--color-4);
+}
+
+.title h1{
+    color: var(--color-5);
 }
 
 .album-name {
@@ -172,8 +183,12 @@ body.day1 .title h1 {
     /* border-radius: 1em; */
 }
 
+.album-name h2 {
+    margin-bottom: 0em;
+}
+
 .album-name p {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: .75em;
 }
 
@@ -285,7 +300,7 @@ body.day1 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     text-align: center;
 
 }
