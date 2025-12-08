@@ -13,6 +13,7 @@
     --color-6: #2a3fa9;
     --color-7: #725b2e;
     --color-8: #ee7793;
+    --color-9: #fdc93c;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -73,7 +74,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-8);
+    color: var(--color-9);
 }
 
 nav a:hover { /*for underline */
@@ -83,7 +84,7 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-8);
+    color: var(--color-9);
 }
 
 body.day1 a.youtube-link, 
@@ -115,6 +116,20 @@ body.day5 .favorite-B a,
 body.day5 .favorite-C a {
     color: var(--color-7);
 }
+
+body.day6 a.youtube-link, 
+body.day6 .favorite-B a,
+body.day6 .favorite-C a {
+    color: var(--color-8);
+}
+
+body.day7 a.youtube-link, 
+body.day7 .favorite-B a,
+body.day7 .favorite-C a {
+    color: var(--color-9);
+}
+
+
 
 
 header, section { /*go over this. It is what starts the background box*/
@@ -191,9 +206,17 @@ body.day5 .title h1 {
     color: var(--color-7);
 }
 
+body.day6 .title h1 {
+    color: var(--color-8);
+}
+
+body.day7 .title h1 {
+    color: var(--color-9);
+}
+
 
 .title h1{
-    color: var(--color-8);
+    color: var(--color-9);
 }
 
 .album-name {
@@ -334,7 +357,7 @@ body.day5 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-8);
+    background-color: var(--color-9);
     text-align: center;
 
 }
