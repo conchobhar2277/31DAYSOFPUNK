@@ -18,6 +18,7 @@
     --color-11: #c3c642;
     --color-12: #e20d0d;
     --color-13: #ffe100;
+    --color-14: #515bc9;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -78,7 +79,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-13);
+    color: var(--color-14);
 }
 
 nav a:hover { /*for underline */
@@ -88,7 +89,7 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-13);
+    color: var(--color-14);
 }
 
 body.day1 a.youtube-link, 
@@ -155,6 +156,12 @@ body.day11 a.youtube-link,
 body.day11 .favorite-B a,
 body.day11 .favorite-C a {
     color: var(--color-13);
+}
+
+body.day12 a.youtube-link, 
+body.day12 .favorite-B a,
+body.day12 .favorite-C a {
+    color: var(--color-14);
 }
 
 
@@ -258,9 +265,13 @@ body.day11 .title h1 {
     color: var(--color-13);
 }
 
+body.day12 .title h1 {
+    color: var(--color-14);
+}
+
 
 .title h1{
-    color: var(--color-13);
+    color: var(--color-14);
 }
 
 .album-name {
@@ -281,8 +292,12 @@ body.day11 .title h1 {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /*for today*/
     /* border-radius: 1em; */
+}
+
+.album-name img[alt="Album_Covers/Q"]  {
+    max-width: 500px;
 }
 
 .album-name h2 {
@@ -402,7 +417,7 @@ body.day11 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-13);
+    background-color: var(--color-14);
     text-align: center;
 
 }
