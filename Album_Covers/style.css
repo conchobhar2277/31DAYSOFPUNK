@@ -22,6 +22,7 @@
     --color-15: #d4d4d4;
     --color-16: #de7f76;
     --color-17: #daaba7;
+    --color-18: #9d84a2;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -82,7 +83,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-17);
+    color: var(--color-18);
 }
 
 nav a:hover { /*for underline */
@@ -92,7 +93,7 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-17);
+    color: var(--color-18);
 }
 
 body.day1 a.youtube-link, 
@@ -183,6 +184,12 @@ body.day15 a.youtube-link,
 body.day15 .favorite-B a,
 body.day15 .favorite-C a {
     color: var(--color-17);
+}
+
+body.day16 a.youtube-link, 
+body.day16 .favorite-B a,
+body.day16 .favorite-C a {
+    color: var(--color-18);
 }
 
 
@@ -302,9 +309,13 @@ body.day15 .title h1 {
     color: var(--color-17);
 }
 
+body.day15 .title h1 {
+    color: var(--color-18);
+}
+
 
 .title h1{
-    color: var(--color-17);
+    color: var(--color-18);
 }
 
 .album-name {
@@ -331,6 +342,11 @@ body.day15 .title h1 {
 
 .album-name img[alt="Album_Covers/Q"]  {
     max-width: 500px;
+}
+
+.album-name img[alt="Album_Covers/Ban"]  {
+    max-width: 500px;
+    margin-bottom: 3em;
 }
 
 .album-name h2 {
@@ -450,7 +466,7 @@ body.day15 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-17);
+    background-color: var(--color-18);
     text-align: center;
 
 }
