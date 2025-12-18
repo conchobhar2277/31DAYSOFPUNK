@@ -24,6 +24,7 @@
     --color-17: #daaba7;
     --color-18: #9d84a2;
     --color-19: #ffa528;
+    --color-20: #dc1b75;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -84,7 +85,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-19);
+    color: var(--color-20);
 }
 
 nav a:hover { /*for underline */
@@ -94,7 +95,7 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-19);
+    color: var(--color-20);
 }
 
 body.day1 a.youtube-link, 
@@ -197,6 +198,12 @@ body.day17 a.youtube-link,
 body.day17 .favorite-B a,
 body.day17 .favorite-C a {
     color: var(--color-19);
+}
+
+body.day18 a.youtube-link, 
+body.day18 .favorite-B a,
+body.day18 .favorite-C a {
+    color: var(--color-20);
 }
 
 
@@ -324,9 +331,13 @@ body.day17 .title h1 {
     color: var(--color-19);
 }
 
+body.day18 .title h1 {
+    color: var(--color-20);
+}
+
 
 .title h1{
-    color: var(--color-19);
+    color: var(--color-20);
 }
 
 .album-name {
@@ -360,12 +371,17 @@ body.day17 .title h1 {
     margin-bottom: 3em;
 }
 
+.album-name img[alt="Album_Covers/rr"]  {
+    max-width: 500px;
+    margin-bottom: 4em;
+}
+
 .album-name h2 {
     margin-bottom: 0em;
 }
 
 .album-name p {
-    margin-bottom: 2em;
+    margin-bottom: .85em;
     font-size: .75em;
 }
 
@@ -477,7 +493,7 @@ body.day17 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-19);
+    background-color: var(--color-20);
     text-align: center;
 
 }
