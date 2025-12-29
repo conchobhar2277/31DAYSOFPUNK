@@ -35,6 +35,7 @@
     --color-28: #f53523;
     --color-29: #398acc;
     --color-30: #be4d4d;
+    --color-31: #f5a623;
 
     --line-height-base: 1.6;
     --line-height-heading: 1.2;
@@ -95,7 +96,7 @@ nav a {
 
 .favorite-C a, .favorite-B a {
     text-decoration: none;
-    color: var(--color-30);
+    color: var(--color-31);
 }
 
 nav a:hover { /*for underline */
@@ -105,7 +106,7 @@ nav a:hover { /*for underline */
 .favorite-B a:hover, .favorite-C a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--color-30);
+    color: var(--color-31);
 }
 
 body.day1 a.youtube-link, 
@@ -276,6 +277,12 @@ body.day28 .favorite-C a {
     color: var(--color-30);
 }
 
+body.day29 a.youtube-link, 
+body.day29 .favorite-B a,
+body.day29 .favorite-C a {
+    color: var(--color-31);
+}
+
 
 header, section { /*go over this. It is what starts the background box*/
     /* margin-bottom: 0 auto 2em; */
@@ -443,9 +450,13 @@ body.day28 .title h1 {
     color: var(--color-30);
 }
 
+body.day29 .title h1 {
+    color: var(--color-31);
+}
+
 
 .title h1{
-    color: var(--color-30);
+    color: var(--color-31);
 }
 
 .album-name {
@@ -486,6 +497,11 @@ body.day28 .title h1 {
 
 .album-name img[alt="Album_Covers/Texas"]  {
     max-width: 500px;
+    margin-bottom: 3em;
+}
+
+.album-name img[alt="Album_Covers/D"]  {
+    max-width: 650px;
     margin-bottom: 3em;
 }
 
@@ -606,7 +622,7 @@ body.day28 .title h1 {
 
 section {
     padding: 3em min(2em, 15%);
-    background-color: var(--color-30);
+    background-color: var(--color-31);
     text-align: center;
 
 }
